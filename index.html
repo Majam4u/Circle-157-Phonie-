@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phonie</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
-    
-    <h2>make some magic here!!</h2>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<body>
+
+  <div id="container">
+    <div id="top">
+      <h1>PHONIE</h1>
+      <P>Your Friendly Recharge Robot</P>
+      <div id="profile">
+        <img class="uthman" src="pictures/uthman.jpg" alt="uthman" />
+        <h4 id="wlcm"> Welcome, <span>Uthman!</span></h4>
+      </div>
+
+    </div>
+    <div id="bottom">
+      <h3>Your Network Provider is : </h3>
+
+      <div id="np_box">
+
+        <img src="" alt="networklogo" id="ourImage" height=40 width=70 />
+
+      </div>
+
+      <label for="pnumber">Enter Phone Number</label>
+      <input type="number" onchange="myFunction()" placeholder="+234 *** *** ****" id="number">
+
+      <label for="amount">Enter Amount</label>
+      <input type="number" placeholder="0.00" id="amount">
+      <button id="btn">Recharge</button>
+
+    </div>
+  </div>
+  <footer>
+    <div>
+      <p class="footer"> &reg;Circle157&trade;  </p>
+    </div>
+  </footer>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <script src="index.mjs" type="module" defer></script>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>
