@@ -1,18 +1,7 @@
 const checkNumber = document.querySelector("#btn")
 const number = document.querySelector("#number")
 const networkImg = document.getElementById("ourImage")
-// const gloImg = document.querySelector("#glo")
-// const nineMobileImg = document.querySelector("#nineMobile")
-// const airtelImG = document.querySelector("#airtel")
 
-// const identiifier = [
-  
-// ]
-//   MTN: [ "0803","0806","0703","0706","0810","0813","0814","0816","0903","0906","0916",],
-//   GLO: [" 0805", "0807", "0811", "0705", "0815", "0905"],
-//   AIRTEL: ["0802", "0808", "0812", "0701", "0708", "0902", "0907", "0901"],
-//   "9MOBILE": ["0809", "0817", "0818", "0908", "0909"],
-// };
 const identifier = {
   "MTN": [ "0803","0806","0703","0706","0810","0813","0814","0816","0903","0906","0916"],
   "GLO": ["0805", "0807", "0811", "0705", "0815", "0905"],

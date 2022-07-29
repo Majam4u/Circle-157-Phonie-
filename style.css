@@ -122,5 +122,10 @@ img{
 }
 
 .footer{
-  
+  display: flex;
+  justify-content: center;
+/*   background: whitesmoke; */
+  color: black;
+  align-items: center;
+  font-weight: 30px;
 }
