@@ -17,55 +17,57 @@ function myFunction() {
 
     for(let number of identifier[mobile]){
       console.log(mobile) 
-      if(networkValue === number && mobile === "MTN"){
+      if((networkValue === number || x.slice(0, 8).includes(number)) && mobile === "MTN"){
         networkImg.src = "pictures/mtn.jpg"
       }
-      else if(networkValue === number && mobile === "GLO"){
+      else if((networkValue === number || x.slice(0, 8).includes(number)) && mobile === "GLO"){
         networkImg.src="pictures/glo.jpg"
       }
-      else if(networkValue === number && mobile === "AIRTEL"){
+      else if((networkValue === number || x.slice(0, 8).includes(number)) && mobile === "AIRTEL"){
         networkImg.src="pictures/airtel.jpg"
       }
-      else if(networkValue === number && mobile === "9MOBILE"){
+      else if((networkValue === number || x.slice(0, 8).includes(number)) && mobile === "9MOBILE"){
         networkImg.src="pictures/9mobile.jpg"
       }
     }
   }
   
 }
-checkNumber.addEventListener('click',() =>{
-  let phoneNo = number.value();
-
-  for (const network in identifier){
-    if (identifier[network].includes(phoneNo[0,4])){
-      if (network === MTN){
-        mtnImg.style.width = '200';
-        mtnImg.style.height ='100';
-        airtelImG.style.display = 'none';
-        nineMobileImg.style.display = 'none';
-        gloImg.style.display = 'none';
-      }
-      else if ( network === AIRTEL ) {
-         airtelImG.style.width  = '200';
-        airtelImG.style.height = '100';
-        mtnImg.style.display = 'none';
-        nineMobileImg.style.display = 'none';
-        gloImg.style.display = 'none';
-      }
-      else if (network === GLO ) {
-        gloImg.style.width = '200';
-        gloImg.style.height = '100';
-        airtelImG.style.display = 'none';
-        nineMobileImg.style.display = 'none';
-        mtnImg.style.display = 'none';
-      } else if ( network === "9MOBILE" ) {
-        nineMobileImg.style.width = '200';
-        nineMobileImg.style.height = '100';
-        airtelImG.style.display = 'none';
-        mtnImg.style.display = 'none';
-        gloImg.style.display = 'none';
-        return;
-      }
-    }
-  }
+checkNumber.addEventListener('change',() =>{
+  myFunction();
 })
+//   let phoneNo = number.value();
+
+//   for (const network in identifier){
+//     if (identifier[network].includes(phoneNo[0,4])){
+//       if (network === MTN){
+//         mtnImg.style.width = '200';
+//         mtnImg.style.height ='100';
+//         airtelImG.style.display = 'none';
+//         nineMobileImg.style.display = 'none';
+//         gloImg.style.display = 'none';
+//       }
+//       else if ( network === AIRTEL ) {
+//          airtelImG.style.width  = '200';
+//         airtelImG.style.height = '100';
+//         mtnImg.style.display = 'none';
+//         nineMobileImg.style.display = 'none';
+//         gloImg.style.display = 'none';
+//       }
+//       else if (network === GLO ) {
+//         gloImg.style.width = '200';
+//         gloImg.style.height = '100';
+//         airtelImG.style.display = 'none';
+//         nineMobileImg.style.display = 'none';
+//         mtnImg.style.display = 'none';
+//       } else if ( network === "9MOBILE" ) {
+//         nineMobileImg.style.width = '200';
+//         nineMobileImg.style.height = '100';
+//         airtelImG.style.display = 'none';
+//         mtnImg.style.display = 'none';
+//         gloImg.style.display = 'none';
+//         return;
+//       }
+//     }
+//   }
+// })
